@@ -79,7 +79,7 @@ public class UsersController {
     }
 
     @GetMapping(path = "/register/{token}")
-    public ModelAndView activateAccount(@PathVariable("token") String token) throws IllegalAccessException, NoSuchFieldException { // @RequestParam pt query params
+    public ModelAndView activateAccount(@PathVariable("token") String token) { // @RequestParam pt query params
         RestTemplate restTemplate = new RestTemplate();
         Map<String, Object> result = restTemplate.getForObject(ACTIVATE_ACCOUNT_URL.replace("{token}", token), Map.class);
 

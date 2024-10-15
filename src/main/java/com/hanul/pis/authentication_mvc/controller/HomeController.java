@@ -13,13 +13,13 @@ public class HomeController {
     @GetMapping("/")
     public ModelAndView homepage() { // also can take as a param a ModelMap or a Model
 
-        Map<String, String> model = new HashMap<>();
         ModelAndView modelAndView = new ModelAndView(); // ("home", model);
         modelAndView.setViewName("home");
         modelAndView.addObject("firstName", "Geo");
         modelAndView.addObject("lastName", "Chitibusar");
 
         // for Model & ModelMap
+        //Map<String, String> model = new HashMap<>();
         //model.addAttribute("firstName", "Georgiana");
         //model.addAttribute("lastName", "Chitibus");
         // return "home";
