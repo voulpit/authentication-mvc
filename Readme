@@ -1,0 +1,14 @@
+--
+Running the application on port 8081:
+mvn spring-boot:run
+
+--
+Available endpoints:
+
+http://localhost:8081/signup
+
+http://localhost:8081/register/{token}
+Example: http://localhost:8081/register/eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJNSXhxTVVxZXFGdzZvcUp6MzBsQjJPRmxOVWd5ZEUiLCJleHAiOjE3Mjk4NzYzNzZ9.hZcHnVlpAjWEdcM8F8S5xEruYipMVyCmrSK49JUKDMZo9aUNjtdiFMz1MXkIdY_LLi3jFa-tUCPzR1CNDVuCUg
+
+http://localhost:8081/users/{userId}
+Example: http://localhost:8081/users/V16l2CVctDB7kMTzidAjgWfkiUxLZh

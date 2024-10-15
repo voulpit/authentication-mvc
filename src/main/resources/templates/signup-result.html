@@ -5,9 +5,11 @@
     <title>Your signing up</title>
 </head>
 <body>
-    <h1>Your signup</h1>
-    <p th:text="'First name: ' + ${user.firstName}" />
-    <p th:text="'Last name: ' + ${user.lastName}" />
-    <p th:text="'Email: ' + ${user.email}" />
+    <h1>Your signup details</h1>
+    <p th:text="'User ID: ' + ${userId}" />
+    <p th:text="'First name: ' + ${firstName}" />
+    <p th:text="'Last name: ' + ${lastName}" />
+    <p th:text="'Email: ' + ${email}" />
+    <i>You will receive a confirmation email on the provided address, please make sure you activate your account.</i>
 </body>
 </html>

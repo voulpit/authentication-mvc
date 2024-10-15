@@ -6,6 +6,7 @@ public class User {
     private String email;
     private String password;
     private String repeatPassword;
+    private String userId;
 
     public String getFirstName() {
         return firstName;
@@ -45,5 +46,13 @@ public class User {
 
     public void setRepeatPassword(String repeatPassword) {
         this.repeatPassword = repeatPassword;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 }
